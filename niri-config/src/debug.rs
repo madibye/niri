@@ -26,6 +26,7 @@ pub struct Debug {
     pub deactivate_unfocused_windows: bool,
     pub skip_cursor_only_updates_during_vrr: bool,
     pub disable_10bit_output: bool,
+    pub nested_show_host_cursor: bool,
     pub force_tearing: bool,
 }
 
@@ -76,6 +77,8 @@ pub struct DebugPart {
     #[knuffel(child)]
     pub disable_10bit_output: Option<Flag>,
     #[knuffel(child)]
+    pub nested_show_host_cursor: Option<Flag>,
+    #[knuffel(child)]
     pub force_tearing: Option<Flag>,
 }
 
@@ -102,6 +105,7 @@ impl MergeWith<DebugPart> for Debug {
             deactivate_unfocused_windows,
             skip_cursor_only_updates_during_vrr,
             disable_10bit_output,
+            nested_show_host_cursor,
             force_tearing,
         );
 
