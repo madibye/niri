@@ -195,8 +195,8 @@ use crate::utils::vblank_throttle::VBlankThrottle;
 use crate::utils::watcher::Watcher;
 use crate::utils::xwayland::satellite::Satellite;
 use crate::utils::{
-    center, center_f64, expand_home, frequency_to_period, get_monotonic_time,
-    ipc_transform_to_smithay, is_mapped, logical_output, make_screenshot_path, output_matches_name,
+    center, center_f64, frequency_to_period, get_monotonic_time, ipc_transform_to_smithay, 
+    is_mapped, logical_output, make_screenshot_path, output_matches_name,
     output_size, panel_orientation, send_scale_transform, winit_scale, write_png_rgba8, xwayland,
 };
 use crate::window::mapped::MappedId;
